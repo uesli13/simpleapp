@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="home">
+  <div class="nav">
+    <a href="/login.html">Sign in</a>
+    <a href="/signup.html">Sign up</a>
+    <button id="logout" type="button">Logout</button>
+  </div>
+
+  <h1>All posts</h1>
+  <div class="error" aria-live="polite"></div>
+
+  <!-- Visible only when logged in (handled by JS) -->
+  <form id="new-post-form" style="display:none">
+    <input id="content" type="text" placeholder="Write a post..." />
+    <button type="submit">Post</button>
+  </form>
+
+  <div id="posts"></div>
+
+  <script src="/api.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
