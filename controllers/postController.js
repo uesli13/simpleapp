@@ -52,4 +52,5 @@ const getPostById = async (req, res, next) => {
   }
 };
 
+//THis is an experiment
 module.exports = { createPost, getPosts, getPostById };
